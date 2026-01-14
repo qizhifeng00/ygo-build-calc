@@ -44,9 +44,7 @@
     "url": "https://github.com/YOUR_USERNAME/ygo-build-calc/issues"
   },
   "homepage": "https://github.com/YOUR_USERNAME/ygo-build-calc#readme",
-  "dependencies": {
-    "@ygo_build/core": "file:../ygo-build-core"
-  },
+ 
   "devDependencies": {
     "@vitest/coverage-v8": "^1.2.0",
     "tsup": "^8.0.1",
