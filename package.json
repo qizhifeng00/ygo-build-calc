@@ -1,0 +1,60 @@
+{
+  "name": "@ygo_build/calc",
+  "version": "0.1.0",
+  "description": "YGO 游戏王概率计算引擎 - 支持精确计算、蒙特卡洛模拟和卡组优化",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui"
+  },
+  "keywords": [
+    "ygo",
+    "yugioh",
+    "probability",
+    "calculator",
+    "deck-optimizer",
+    "monte-carlo"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/ygo-build-calc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/ygo-build-calc/issues"
+  },
+  "homepage": "https://github.com/YOUR_USERNAME/ygo-build-calc#readme",
+  "dependencies": {
+    "@ygo_build/core": "file:../ygo-build-core"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^1.2.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
+
